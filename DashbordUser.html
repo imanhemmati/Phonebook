@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد کاربران</title>
+    <link rel="stylesheet" href="Css/kamadatepicker.min.css">
+    <link rel="stylesheet" href="Css/DashbordUser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="box-search">
+        <label class="box_search-label" for="Input-Serch-Server">جستجو مخاطبان</label>
+        <input type="text" placeholder="جستجو" id="Input-Serch-Server">
+    </div>
+
+    <h1 class="user-title">
+        داشبورد کاربران ثبت شده
+    </h1>
+
+    <div id="wrap-users">
+
+    </div>
+    <!-- 
+             <div class="user">
+               <div class="user-profile-wrap">
+                <img class="user-profile" src="${keyDataArray[1].imgSave}" alt="default-image">
+                   <div class="user-profile-description">
+                       <h1 class="user-profile-name">${keyDataArray[1].name} - ${keyDataArray[1].email}</h1>
+                       <h3 class="user-explanations">تلفن : ${keyDataArray[1].phone}</h3>
+                       <h4 class="user-explanations">تاریخ تولد : ${keyDataArray[1].birthday}</h4>
+                   </div>
+               </div>
+               <div class="btn-groups-column">
+                   <button class="delete-user-btn" onclick="buttonModalContainer(${keyDataArray[1].id})">حذف کاربر</button>
+                   <button class="edit-user-btn" onclick="openEditModal('${keyDataArray[1].id}')">ویرایش کاربر</button>
+               </div>
+           </div>
+         -->
+    </div>
+
+
+    <div class="modal-container" id="edit-modal">
+        <!-- ! add visible class to be visible ! -->
+        <div class="modal-content">
+            <div class="box-modal-close">
+                <i class="modal-close bi bi-arrow-left-square-fill"></i>
+            </div>
+            <!-- ! edit user content ! -->
+            <h1 class="modal-title">صفحه ویرایش کاربران</h1>
+            <form action="" id="edit-user-form" class="edit-user-form" onsubmit="event.preventDefault()">
+                <!--  -->
+                <label for="EditeName">ویرایش نام کاربری :<i id="Edite-Name-Icon"
+                        class="Edite-lable bi bi-exclamation-octagon-fill"></i></label>
+                <div id="boxEditeName" class="input-field">
+                    <span><i class="bi bi-person-down"></i></span>
+                    <input style="height: 43px;" type="text" id="EditeName" class="EditeName" spellcheck="false"
+                        required>
+                </div>
+                <label for="EditeEmail">ویرایش ایمیل کاربر :<i id="Edite-Email-Icon"
+                        class="Edite-lable bi bi-exclamation-octagon-fill"></i></label>
+                <div id="boxEditeEmail" class="input-field">
+                    <span><i class="bi bi-envelope-arrow-up"></i></span>
+                    <input type="email" id="EditeEmail" class="EditeEmail" spellcheck="false" required>
+                </div>
+                <label for="EditePhone">ویرایش تلفن کاربر :<i id="Edite-Tel-Icone"
+                        class="Edite-lable bi bi-exclamation-octagon-fill"></i></label>
+                <div id="boxEditePhone" class="input-field">
+                    <span><i class="bi bi-telephone-fill"></i></span>
+                    <input type="tel" id="EditePhone" class="EditePhone" spellcheck="false" maxlength="11" required>
+                </div>
+                <label for="test-date-id">ویرایش تاریخ تولد کاربر :<i id="Edite-Date-Icone"
+                        class="Edite-lable bi bi-exclamation-octagon-fill"></i></label>
+                <div id="boxEditeDate" class="input-field">
+                    <span><i class="bi bi-calendar-event-fill"></i></span>
+                    <input type="text" id="test-date-id" class="EditeBirthday" spellcheck="false" required>
+                </div>
+                <!--  -->
+                <div class="card1 m-lg-auto">
+                    <img src="img/user.png" id="profile-pic">
+                    <div class="box-button-img">
+
+                        <label class="button__img" for="input-file">عکس جدید <i id="Edite-img-Icon"
+                                class="Edite-lable bi bi-exclamation-octagon-fill"></i></label>
+                        <input type="file"
+                            accept="image/jpeg, image/png, image/jpg, image/bmp, image/gif, image/tiff, image/heif, image/svg, image/esp, image/tif"
+                            id="input-file">
+                    </div>
+                </div>
+                <!--  -->
+                <button class="accept-btn" onclick="updateUser()">به روز رسانی اطلاعات</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-container" id="delete-modal">
+        <div class="modal-content">
+            <!-- ! delete user content ! -->
+            <h1 class="modal-title">آیا مطمئن هستید که می خواهید این کاربر را حذف کنید؟</h1>
+            <div class="btn-groups">
+                <button class="unaccept-btn" id="boxBtnCloseModal">خیر</button>
+                <button class="accept-btn" id="boxBtnDleteUser">بله</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="Script/jq.js"></script>
+<script src="Script/kamadatepicker.min.js"></script>
+<script src="Script/DashbordUser.js"></script>
+
+</html>

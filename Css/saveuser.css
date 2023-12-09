@@ -1,0 +1,76 @@
+
+.form1 .button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4caf50;
+  width: 100%;
+  border: 0;
+  padding: 5px;
+  color: #ffffff;
+  -webkit-transition: all 0.3 ease;
+  -o-transition: all 0.3 ease;
+  -moz-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background: #e0eafc;
+  background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+  background: -webkit-gradient(linear, left top, right top, from(#cfdef3), to(#e0eafc));
+  background: -webkit-linear-gradient(left, #cfdef3, #e0eafc);
+  background: -moz-linear-gradient(left, #cfdef3, #e0eafc);
+  background: -o-linear-gradient(left, #cfdef3, #e0eafc);
+  background: linear-gradient(to right, #cfdef3, #e0eafc);
+}
+.card1 {
+  width: 25%;
+  background: #fff;
+  padding: 40px;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+  text-align: center;
+  color: #333;
+  border: 1px solid rgb(255, 57, 57);
+  -webkit-box-shadow: rgba(255, 115, 115, 0.25) 0px 54px 55px, rgba(255, 125, 125, 0.12) 0px -12px 30px, rgba(255, 109, 109, 0.12) 0px 4px 6px,
+   rgba(255, 93, 93, 0.17) 0px 12px 13px, rgba(255, 97, 97, 0.09) 0px -3px 5px;
+     -moz-box-shadow: rgba(255, 115, 115, 0.25) 0px 54px 55px, rgba(255, 125, 125, 0.12) 0px -12px 30px, rgba(255, 109, 109, 0.12) 0px 4px 6px,
+   rgba(255, 93, 93, 0.17) 0px 12px 13px, rgba(255, 97, 97, 0.09) 0px -3px 5px;
+          box-shadow: rgba(255, 115, 115, 0.25) 0px 54px 55px, rgba(255, 125, 125, 0.12) 0px -12px 30px, rgba(255, 109, 109, 0.12) 0px 4px 6px,
+   rgba(255, 93, 93, 0.17) 0px 12px 13px, rgba(255, 97, 97, 0.09) 0px -3px 5px;
+ 
+   /* box-shadow: rgba(131, 255, 115, 0.792) 0px 54px 55px, rgba(166, 255, 125, 0.769) 0px -12px 30px, rgba(109, 255, 114, 0.706) 0px 4px 6px,
+   rgba(104, 255, 93, 0.722) 0px 12px 13px, rgba(97, 255, 97, 0.665) 0px -3px 5px; */
+   /* border: 1px solid rgb(98, 255, 0); */
+ 
+  
+   
+}
+.card1 img {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+#label-img {
+  display: block;
+  width: 100px;
+  background: #e3362c;
+  color: #fff;
+  padding: 12px;
+  margin: 5px auto;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  cursor: pointer;
+}
+#input-file {
+  display: none;
+}

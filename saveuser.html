@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <title>ذخیره کاربران</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="Css/Bootstrap5.3.2.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/kamadatepicker.min.css">
+    <link rel="stylesheet" href="Css/saveuser.css">
+</head>
+
+<body>
+    <!-- <img src="./img/timeir_prev.png" alt=""> -->
+    <div class="container mt-3">
+        <h3 class="text-center mb-0">اطلاعات را وارد کنید</h3>
+
+        <form action="" class="form1 was-validated" id="form">
+            <div class="mb-3 mt-3">
+                <label for="uname" class="form-label ">نام کاربری :</label>
+                <input type="text" class="form-control name" placeholder="نام کاربری " name="uname" required>
+                <div class="valid-feedback">معتبر</div>
+                <div class="invalid-feedback">لطفا قسمت نام را وارد کنید</div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class=" form-label">پست الکترونیک :</label>
+                <input type="email" class="email form-control" placeholder="پست الکترونیک " name="email" required>
+                <div class="valid-feedback">معتبر</div>
+                <div class="invalid-feedback">لطفا قسمت ایمیل را وارد کنید</div>
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">تلفن :</label>
+                <input dir="rtl" type="tel" class="form-control number" placeholder="تلفن" name="tel" maxlength="11" required>
+                <div class="valid-feedback">معتبر</div>
+                <div class="invalid-feedback">لطفا قسمت تلفن را وارد کنید</div>
+            </div>
+            <div class="mb-3">
+                <label for="Date" class="form-label">تاریخ :</label>
+                <input type="text" id="test-date-id" class="form-control" placeholder="تاریخ" name="Date" required>
+                <div class="valid-feedback">معتبر</div>
+                <div class="invalid-feedback">لطفا قسمت تاریخ را وارد کنید</div>
+            </div>
+            <div class="card1 m-lg-auto">
+                <img src="img/user.png" id="profile-pic">
+                <div class="d-flex justify-content-center">
+                    <label class="btnimg d-block btn btn-danger btn-lg" for="input-file">تصویر اضافه کنید</label>
+                    <input type="file"
+                        accept="image/jpeg, image/png, image/jpg, image/bmp, image/gif, image/tiff, image/heif, image/svg, image/esp, image/tif"
+                        id="input-file">
+                </div>
+            </div>
+
+            <button class="button mt-3">ذخیره اطلاعات وارد شده</button>
+
+
+            <div class="d-flex justify-content-center mt-2">
+                <p class="w-25 text-center shadow-lg p-3 mb-5 bg-white rounded">
+                    <a target="_blank" href="DashbordUser.html">به داشبورد کاربران وارد شوید</a>
+                </p>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="Script/jq.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="Script/Bootstrap5.3.2.js"></script>
+<script src="Script/kamadatepicker.min.js"></script>
+<script src="Script/saveuser.js"></script>
+
+</html>
