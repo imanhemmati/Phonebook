@@ -94,8 +94,8 @@ form.addEventListener("submit", (e) => {
     })
       .then((response) => {
         alert("اطلاعات کاربر با موفقیت ثبت شد");
-        location.href = "DashbordUser.html";
         clearData();
+         location.href = "DashbordUser.html";
       })
       .catch((error) => console.log(error));
   }
